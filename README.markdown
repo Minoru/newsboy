@@ -1,9 +1,9 @@
 newsboy
 =======
 
-Newsboy is an Atom/RSS feeds fetcher (**not** a reader!) It acts as a proxy for
-your newsreader, and will continue fetching all the feeds you've requested
-lately, caching them to deliver when you next open your reader.
+Newsboy is an Atom/RSS feeds fetcher. It acts as a proxy for your reader, and
+will keep fetching the feeds you've requested lately, caching them so you don't
+miss a single tidbit.
 
 Installation
 ------------
