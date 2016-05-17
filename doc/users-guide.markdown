@@ -31,10 +31,16 @@ Specifically, Newsboy requires you to only use HTTP schema in feed URLs, i.e.
 start them with `http://` and not `https://`. This way, your newsreader won't
 require HTTPS connection and will thus allow Newsboy to do its job.
 
-But that doesn't mean your communications are now in clear! Your newsreader and
-Newsboy communicate over HTTPS themselves, and Newsboy makes sure to fetch your
-feeds over HTTPS whenever appropriate. In the next section, we will describe how
-you can control the latter feature.
+But what if you forget to do that? Don't you worry! Newsboy will notice that
+you're requesting a feed and will fetch it for you, but it won't be able to
+serve it for reasons mentioned above. When you finally notice that you have
+HTTPS URL and edit it, you'll get all the items you would've got if you used
+HTTP URL from the start. Newsboy got your back!
+
+And remember: using HTTP URLs for feeds doesn't mean your communications are
+now in clear! Your newsreader and Newsboy communicate over HTTPS themselves,
+and Newsboy makes sure to fetch your feeds over HTTPS whenever appropriate. In
+the next section, we will describe how you can control the latter feature.
 
 # `newsboy_fetch_over_https=(on|off)`
 
